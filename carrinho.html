@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Doce Encanto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body> 
+    
+    <header>
+        <div class="container header-content">
+            <img src="imagens/logo3.png" alt="Logo Doce Encanto" class="logo">
+            <h1>Doce Encanto</h1>
+            <div class="topo">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="login_cadastro.html"><i class="fa-solid fa-user"></i> Entrar</a></li>
+                    <li><a href="carrinho.html"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container carrinho">
+            <h2>Meu Carrinho</h2>
+            
+            <div class="carrinho-cabecalho">
+                <p class="col-produto">Produto</p>
+                <p class="col-nome">Nome</p>
+                <p class="col-preco">Preço Unitário</p>
+                <p class="col-quantidade">Quantidade</p>
+                <p class="col-subtotal">Subtotal</p>
+                <p class="col-remover">Remover</p>
+            </div>
+            
+            <div class="item-carrinho" data-preco-unitario="6.00">
+                <div class="col-produto">
+                    <img src="imagens/cup.png" alt="Cupcake" class="img-mini">
+                </div>
+                <div class="col-nome">Cupcake de Chocolate</div>
+                <div class="col-preco">R$ 6,00</div>
+                
+                <div class="col-quantidade controle-quantidade">
+                    <input type="number" value="2" min="1" max="100" class="input-quantidade" data-id="1">
+                </div>
+                
+                <div class="col-subtotal subtotal-item" id="subtotal-1">R$ 12,00</div>
+                <div class="col-remover">
+                    <button class="btn-remover"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+
+            <div class="item-carrinho" data-preco-unitario="3.50">
+                <div class="col-produto">
+                    <img src="imagens/brigadeiro_gourmet.jpg" alt="Brigadeiro" class="img-mini">
+                </div>
+                <div class="col-nome">Brigadeiro Gourmet</div>
+                <div class="col-preco">R$ 3,50</div>
+                
+                <div class="col-quantidade controle-quantidade">
+                    <input type="number" value="5" min="1" max="100" class="input-quantidade" data-id="2">
+                </div>
+                
+                <div class="col-subtotal subtotal-item" id="subtotal-2">R$ 17,50</div>
+                <div class="col-remover">
+                    <button class="btn-remover"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+
+            <div class="item-carrinho" data-preco-unitario="4.50">
+                <div class="col-produto">
+                    <img src="imagens/trufa_maracuja.jpg" alt="Trufa" class="img-mini">
+                </div>
+                <div class="col-nome">Trufa de Maracujá</div>
+                <div class="col-preco">R$ 4,50</div>
+                
+                <div class="col-quantidade controle-quantidade">
+                    <input type="number" value="3" min="1" max="100" class="input-quantidade" data-id="3">
+                </div>
+                
+                <div class="col-subtotal subtotal-item" id="subtotal-3">R$ 13,50</div>
+                <div class="col-remover">
+                    <button class="btn-remover"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div>
+            
+            <div class="resumo-carrinho">
+                <h3>Resumo do Pedido</h3>
+                <p>Subtotal: <span id="subtotal-geral">R$ 43,00</span></p>
+                <p>Frete: <span id="frete">R$ 10,00</span></p>
+                <p><strong>Total: <span id="total-geral">R$ 53,00</strong></p>
+                <button class="btn-finalizar">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2025 Doce Encanto - Todos os direitos reservados.</p>
+            <p>Contato: contato@doceencanto.com | (11) 99999-9999</p>
+        </div>
+    </footer>
+
+</body>
+</html>

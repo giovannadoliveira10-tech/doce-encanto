@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Admin Doce Encanto</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+      <div class="container header-content">
+          <a href="index.html"><img src="imagens/logo3.png" alt="Logo Doce Encanto" class="logo"></a>
+          <h1>Painel Administrativo</h1>
+      </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="menu-lateral">
+            <ul>
+              <li><a href="dashboard.html" class="ativo">Dashboard</a></li>
+              <li><a href="cadastrar_produto.html">Novo Produto</a></li>
+            </ul>
+        </div>
+
+        <section class="area-conteudo">
+            <h2>Produtos Cadastrados</h2>
+
+            <div class="tabela-admin-flex">
+                <div class="tabela-header">
+                    <div class="col-produto">Produto</div>
+                    <div class="col-preco">Preço</div>
+                    <div class="col-acoes">Ações</div>
+                </div>
+
+                <div class="tabela-linha">
+                    <div class="col-produto">Cupcake de Chocolate</div>
+                    <div class="col-preco">R$ 6,00</div>
+                    <div class="col-acoes">
+                        <a href="#">Editar</a> 
+                        <a href="#">Apagar</a>
+                    </div>
+                </div>
+
+                <div class="tabela-linha">
+                    <div class="col-produto">Trufa de Maracujá</div>
+                    <div class="col-preco">R$ 4,50</div>
+                    <div class="col-acoes">
+                        <a href="#">Editar</a> 
+                        <a href="#">Apagar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Administração Doce Encanto © 2025</p>
+      </div>
+    </footer>
+
+</body>
+</html>
